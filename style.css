@@ -256,7 +256,8 @@ html {
 }
 
 body {
-  font-family: "Noto sans KR";
+  font-family: "Noto sans KR", sans-serif;
+  color: #3f4150;
 }
 
 h1 {
