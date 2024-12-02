@@ -34,8 +34,14 @@
 
 
 $gutter: 20px;
+
 $sm-columns: 4;
 $sm-margin: 5px;
+
+$md-breakpoint: 768px;
+$md-columns: 12;
+$md-margin: 30px;
+$md-max-container: 960px + $md-margin * 2;
 
 .container {
 
@@ -49,12 +55,23 @@ $sm-margin: 5px;
 	}
 
 	[class^='col-'] {
-		padding: 0 $gutter, 2;
+		padding: 0 math.div($gutter, 2);
 	}
 
 	@for $i from 1 through $sm-columns {
 		.col-sm-#{$i} {
 			width: math.div($i, $sm-columns) * 100%;
+		}
+	}
+
+	@media screen and (min-width: $md-breakpoint) {
+		padding: 0 $md-margin;
+		max-width: $md-max-container;
+
+		@for $i from 1 through $md-columns {
+			.col-md-#{$i} {
+				width: math.div($i, $md-columns) * 100%;
+			}
 		}
 	}
 
