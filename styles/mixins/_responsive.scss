@@ -10,9 +10,25 @@
 		}
 	}
 }
-  
+
   @mixin mobile-only() {
-	@media screen and (max-width: calc($md-breakpoint - 1px)) {
+	@media screen and (max-width: $mobile-max-width) {
 		@content;
 	}
 }
+
+/*
+	미디어 쿼리 안에 추가적으로 믹신을 추가할 때 키워드를 사용해야 함
+	@content;
+	이런거를 추가해줘야 함
+
+	.section {
+		@include respoinsive(T) {
+			font-size: 10px; color: red;
+		}
+
+		.ic-close {
+			font-size: 20px;
+		}
+	} ... 이렇게 작성하는 것들이 모두 @content 에 들어감
+*/
