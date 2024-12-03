@@ -1,0 +1,60 @@
+/*
+
+	@mixin flexbox($jc, $ai) {
+		display: flex;
+		justify-content: $jc;
+		align-items: $ai;
+	}
+	.modal { @include flexbox(center, center) } << 매번 이렇게 써야함
+	center center를 기본값으로 사용할 수 있게 인자에 기본값으로 center을 추가
+	function은 @include를 넣어줘야 하는 mixin과 다르게 붙여줘야 하는 것 없이 바로 사용할 수 있음 하지만 특정 값만을 반환할 수 있음. mixin은 다양한 인자를 넣을 수 있음
+
+	@mixin flexbox($jc: center, $ai: center) {
+		display: flex;
+		justify-content: _get-flex-value($jc);
+		align-items: _get-flex-value($ai);
+	}
+
+	하단의 함수에 center을 넣은 뒤 뒤의 인자에 굳이 뭘 넣어주지 않더라도 기본값인 center이 들어가게 됨
+
+*/
+
+
+// main 정렬용 flexbox
+
+$flex-map: (
+	start: flex-start,
+	end: flex-end,
+	between: space-between,
+	around: space-around,
+	stretch: stretch,
+	center: center,
+);
+
+@function _get-flex-value($key) {
+	@return map-get($flex-map, $key);
+}
+
+@mixin flexbox($jc: center, $ai: center) {
+	display: flex;
+	justify-content: _get-flex-value($jc);
+	align-items: _get-flex-value($ai);
+}
+
+
+// inline flex용
+
+@mixin inline-flexbox($jc: center, $ai: center) {
+	display: inline-flex;
+	justify-content: _get-flex-value($jc);
+	align-items: _get-flex-value($ai);
+}
+
+// column flex용
+
+@mixin column-flexbox($jc: center, $ai: center) {
+	display: flex;
+	flex-direction: column;
+	justify-content: _get-flex-value($jc);
+	align-items: _get-flex-value($ai);
+}
