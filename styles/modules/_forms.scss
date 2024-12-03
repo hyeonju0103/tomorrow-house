@@ -1,0 +1,32 @@
+%form-base {
+	@include text-style(16, $primary);
+	display: block; width: 100%; height: 40px; border-radius: 4px; padding: 0 16px; border: 1px solid $border; background-color: $white; appearance: none; transition: background-color 200ms ease-in-out;
+	&::placeholder { color: $tertiary; background: $white; }
+	&:not(:disabled):hover { background-color: $background; }
+	&:disabled { opacity: 0.4; cursor: none; pointer-events: none; }
+}
+
+.form-select, .form-input { @extend %form-base; padding-right: 40px; text-overflow: ellipsis; }
+.select-group {
+	position: relative;
+	&.is-active {
+		.form-select { border-color: $blue; }
+		.ic-caret { color: $blue; }
+	}
+	.form-select { padding-right: 40px; text-overflow: ellipsis; }
+	.ic-caret {
+		@include pos-center-y;
+		right: 8px; font-size: 24px; color: $tertiary; pointer-events: none; }
+}
+.input-group {
+	position: relative;
+	.form-input::placeholder { background-color: $white; transition: background-color 200ms ease-in-out; }
+	&:hover .form-input::placeholder { background-color: $background; }
+	.form-input {
+		padding-left: 40px; text-overflow: ellipsis;
+	}
+	.ic-search {
+		@include pos-center-y;
+		left: 10px; font-size: 20px; color: $secondary;
+	}
+}
