@@ -1,9 +1,12 @@
-@use './constants/colors' as color;
-@use './constants/typography' as typography;
+@import './constants/colors';
+@import './constants/typography';
+@import './constants/breakpoints';
 
-@use './base/fonts' as fonts;
-@use './base/normalize';
-@use './base/reset';
+@import './base/fonts';
+@import './base/normalize';
+@import './base/reset';
 
-@use './mixins/text-style' as text-style;
-@use './layouts/grids' as grids;
+@import './mixins/text-style';
+@import './mixins/responsive';
+
+@import './layouts/grids';
