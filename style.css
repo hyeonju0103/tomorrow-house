@@ -85,8 +85,7 @@ hr {
   height: 0;
   overflow: visible; }
 
-W
-pre {
+W pre {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -271,6 +270,38 @@ address {
 	하단의 함수에 center을 넣은 뒤 뒤의 인자에 굳이 뭘 넣어주지 않더라도 기본값인 center이 들어가게 됨
 
 */
+/*
+
+	자체적으로 지원하는 placeholder 기능을 사용
+	@mixin처럼 인자를 받을 수 없음
+	@include를 사용하는 것이 아닌 @extend 사용해줘야 함
+	연관있는 친구들은 css에서 콤마로 group화 해서 보여줌. ex) .tad-red, .tad-green { ~...
+
+*/
+.tag-red, .tag-green, .tag-gray {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  height: 20px;
+  padding: 0 6px;
+  font-weight: 600;
+  border-radius: 4px; }
+
+.tag-red {
+  color: #fff;
+  background-color: #f86d7d; }
+
+.tag-green {
+  color: #fff;
+  background-color: #22c58b; }
+
+.tag-gray {
+  color: #8c8d96;
+  background-color: #e0e2e7; }
+
 /*
 
 	* Moblie (<768px)
