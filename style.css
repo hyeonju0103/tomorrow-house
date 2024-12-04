@@ -235,71 +235,44 @@ ul, ol {
 address {
   font-style: normal; }
 
-@font-face {
-  font-family: 'tomorrow';
-  src: url("../../assets/fonts/tomorrow.eot");
-  src: url("../../assets/fonts/tomorrow.eot#iefix") format("embedded-opentype"), url("../../assets/fonts/tomorrow.ttf") format("truetype"), url("../../assets/fonts/tomorrow.woff") format("woff"), url("../../assets/fonts/tomorrow.svg#tomorrow") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block; }
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important; }
 
-i {
-  font-family: 'tomorrow' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+@media screen and (min-width: 768px) {
+  .sm-only {
+    display: none !important; } }
 
-.ic-bell:before {
-  content: "\e900"; }
+@media screen and (max-width: 767px) {
+  .md-only {
+    display: none !important; } }
 
-.ic-bookmark:before {
-  content: "\e901"; }
+@media screen and (min-width: 1200px) {
+  .md-only {
+    display: none !important; } }
 
-.ic-bookmark-filled:before {
-  content: "\e902"; }
+@media screen and (max-width: 1199px) {
+  .lg-only {
+    display: none !important; } }
 
-.ic-caret:before {
-  content: "\e903"; }
+@media screen and (max-width: 767px) {
+  .sm-hidden {
+    display: none !important; } }
 
-.ic-cart:before {
-  content: "\e904"; }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .md-hidden {
+    display: none !important; } }
 
-.ic-check:before {
-  content: "\e905"; }
-
-.ic-chevron:before {
-  content: "\e906"; }
-
-.ic-close:before {
-  content: "\e907"; }
-
-.ic-community:before {
-  content: "\e908"; }
-
-.ic-expert:before {
-  content: "\e909"; }
-
-.ic-lock:before {
-  content: "\e90a"; }
-
-.ic-menu:before {
-  content: "\e90b"; }
-
-.ic-new:before {
-  content: "\e90c"; }
-
-.ic-search:before {
-  content: "\e90d"; }
-
-.ic-star:before {
-  content: "\e90e"; }
-
-.ic-store:before {
-  content: "\e90f"; }
+@media screen and (min-width: 1200px) {
+  .lg-hidden {
+    display: none !important; } }
 
 /*
 	미디어 쿼리 안에 추가적으로 믹신을 추가할 때 키워드를 사용해야 함
@@ -813,5 +786,19 @@ i {
         width: 1045px; }
       .container .col-lg-12 {
         width: 1140px; } }
+
+.gnb {
+  position: relative; }
+  .gnb .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .gnb .logo a {
+      display: block; }
+  .gnb img {
+    display: block;
+    width: auto;
+    height: 20px; }
 
 /*# sourceMappingURL=style.css.map */

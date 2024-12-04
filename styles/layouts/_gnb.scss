@@ -1,0 +1,8 @@
+.gnb {
+	position: relative;
+	.logo {
+		@include pos-center;
+		a { display: block; }
+	}
+	img { display: block; width: auto; height: 20px; }
+}
