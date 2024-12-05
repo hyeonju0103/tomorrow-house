@@ -65,3 +65,31 @@
 </div>
 
 ```
+
+### 3. Search-input
+
+* 최근 검색어가 있을 경우
+
+``` html
+
+<ol>
+	<li><button type="button">김버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
+	<li><button type="button">버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
+	<li><button type="button">튕김버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
+</ol>
+
+```
+
+* 최근 검색어가 없을 경우
+
+``` html
+
+<section>
+	<header>
+		<h2>최근 검색어</h2>
+		<button type="button">전체 삭제</button>
+	</header>
+	<p>최근 검색한 내역이 없습니다.</p>
+</section>
+
+```

@@ -812,9 +812,6 @@ i {
     .my-menu-item a:hover, .my-menu-item button:hover {
       background-color: #f7f8fa; }
 
-body {
-  background: rgba(0, 0, 0, 0.3); }
-
 .drawer-menu.is-active .drawer-menu-button {
   color: #3da5f5; }
 
@@ -1070,8 +1067,12 @@ body {
   overflow-y: auto;
   padding: 32px 20px;
   background-color: #fff;
+  transform: translate3d(-240px, 0, 0);
   z-index: 20;
-  overscroll-behavior: contain; }
+  overscroll-behavior: contain;
+  transition: transform 300ms ease-in-out; }
+  .sidebar.is-active {
+    transform: translate3d(0, 0, 0); }
   .sidebar-header {
     padding: 0 12px; }
     .sidebar-header .logo {
@@ -1140,11 +1141,17 @@ body {
 
 .overlay {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
   height: 100vh;
   background-color: rgba(63, 65, 80, 0.5);
-  top: 0;
-  left: 0;
-  z-index: 10; }
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out; }
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
