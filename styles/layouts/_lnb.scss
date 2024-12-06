@@ -1,0 +1,37 @@
+.lnb {
+
+	$lin-height-sm: 40px;
+	$lin-height-md: 50px;
+	$lnb-link-padding: 8px;
+	$grid-margin: $sm-margin + $gutter / 2;
+
+	overflow-x: auto; overflow-y: visible;
+	@include no-scrollbar;
+	&-list {
+		@include inline-flexbox(start);
+		/* width: max-content; 쓸 수는 있는데 브라우저 별로 호환성이 별로임 */
+		position: relative; white-space: nowrap; margin-left: -#{$grid-margin}; border-bottom: 1px solid $border; padding: 0 #{$grid-margin - $lnb-link-padding}; height: $lin-height-sm;
+	}
+	&-item {
+		&.is-active {
+			a { color: $blue; border-bottom: 2px solid $blue; }
+		}
+		a {
+			@include inline-flexbox(start);
+			@include text-style(13, $dark);
+			font-weight: 700; padding: 0 8px; height: $lin-height-sm; border-bottom: 2px solid transparent;
+			&:hover { color: $blue; }
+		}
+	}
+
+	@include responsive(T) {
+		border-bottom: 1px solid $border; overflow-x: visible; height: $lin-height-md;
+		&-list { height: auto; padding: 0; margin-left: 0; border-bottom: 0 }
+		&-item {
+			a {
+				@include text-style(14); // 색깔 선언 이미 했음
+				height: $lin-height-md;
+			}
+		}
+	}
+}

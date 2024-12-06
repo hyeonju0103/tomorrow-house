@@ -1,5 +1,6 @@
 .sidebar {
 	$sidebar-width: 240px;
+	@include no-scrollbar;
 	position: fixed; top: 0; left: 0; width: $sidebar-width; height: 100vh; overflow-y: auto; padding: 32px 20px; background-color: $white; transform: translate3d(-$sidebar-width, 0, 0); z-index: $sidebar-level; overscroll-behavior: contain; transition: transform 300ms ease-in-out;
 	&.is-active { transform: translate3d(0, 0, 0); }
 	&-header {
@@ -38,6 +39,4 @@
 				&:active { color: $blue; } }
 		}
 	}
-
-	&::-webkit-scrollbar { display: none; }
 }

@@ -4,7 +4,7 @@
 	&-list { @include flexbox(start); }
 	&-item {
 		margin-right: 24px - ($padding * 2);
-		a { @include text-style(18, $primary); display: block; padding: $padding; font-weight: 700; }
+		a { @include text-style(18, $primary); display: block; padding: $padding; font-weight: 700; white-space: nowrap; }
 		&:last-child { margin-right: 0; }
 		&.is-active {
 			a { color: $blue; }
