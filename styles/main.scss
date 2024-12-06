@@ -4,6 +4,7 @@
 @import './constants/grids';
 @import './constants/box-shadows';
 @import './constants/z-indexes';
+@import './constants/dimentions';
 
 @import './base/fonts';
 @import './base/normalize';
@@ -38,3 +39,5 @@
 @import './layouts/search-modal';
 @import './layouts/search-modal';
 @import './layouts/lnb';
+@import './layouts/global-header';
+@import './layouts/global-footer';

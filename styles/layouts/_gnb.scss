@@ -1,9 +1,8 @@
 .gnb {
-	position: relative;
-	border-bottom: 1px solid $border;
+	position: relative; border-bottom: 1px solid $border; background-color: $background;
 	&-wrapper {
 		@include flexbox(between);
-		height: 50px;
+		height: #{$gnb-height-sm - 1px};
 	}
 	&-right {
 		.button-group { @include flexbox(end); }
@@ -15,6 +14,7 @@
 		img { display: block; width: auto; height: 20px; }
 	}
 	@include responsive(T) {
+		height: $gnb-height-md;
 		&-left { @include flexbox(start); }
 		&-right {
 			@include flexbox(end);
