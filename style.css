@@ -951,6 +951,47 @@ i {
   height: 44px;
   padding: 0 8px; }
 
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0; }
+  .breadcrumb a {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #8c8d96; }
+  .breadcrumb .ic-chevron {
+    font-size: 12px;
+    color: #b2b3b9;
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin: 0 2px; }
+  @media screen and (min-width: 768px) {
+    .breadcrumb {
+      padding: 16px 0; }
+      .breadcrumb a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .breadcrumb .ic-chevron {
+        margin: 0 4px; } }
+  @media screen and (min-width: 1200px) {
+    .breadcrumb {
+      padding: 24px 0; }
+      .breadcrumb a:hover {
+        opacity: 0.4;
+        text-decoration: underline; } }
+
+.product-carousel img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.product-carousel-thumbnail {
+  display: none; }
+
 /*
 
 	* Moblie (<768px)
