@@ -3,7 +3,7 @@ const slider = tns({
 	items: 1,
 	controls: false,
 	nav: true,
-	  navContainer: '.product-carousel .thumbnail-list',
+	navContainer: '.product-carousel .thumbnail-list',
 	navAsContainer: true,
 	arrowKeys: true,
 	autoplay: false,
