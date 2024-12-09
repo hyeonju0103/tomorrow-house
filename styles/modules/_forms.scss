@@ -8,8 +8,9 @@
 
 .form-select, .form-input { @extend %form-base; padding-right: 40px; text-overflow: ellipsis; }
 .select-group {
-	position: relative;
+	position: relative; pointer-events: none;
 	&.is-active {
+		pointer-events: all;
 		.form-select { border-color: $blue; }
 		.ic-caret { color: $blue; }
 	}
