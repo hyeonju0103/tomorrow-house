@@ -1,5 +1,4 @@
 .product-review {
-	padding-bottom: 20px;
 	.review-item {
 		border-bottom: 1px solid $border;
 		&:last-child { border-bottom: 0; }
@@ -11,7 +10,6 @@
 	}
 
 	@include responsive(T) {
-		padding-bottom: 80px;
 		.review-empty { padding: 16px 0; }
 	}
 }
