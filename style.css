@@ -1786,6 +1786,14 @@ i {
   .product-inquiry .inquiry-empty {
     padding: 28px 0; } }
 
+@media screen and (max-width: 766px) {
+  .product-shipment.is-open .product-section, .product-shipment.is-open .product-section-devider:last-child {
+    display: block; }
+  .product-shipment.is-open .product-section-header.sm-only {
+    display: none; }
+  .product-shipment .product-section, .product-shipment .product-section-devider:last-child {
+    display: none; } }
+
 /*
 
 	* Moblie (<768px)

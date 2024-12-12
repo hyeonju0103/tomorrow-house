@@ -335,3 +335,135 @@
 
 ```
 
+* 문의가 있는 경우
+
+``` html
+
+<section id="product-inquiry" class="product-section product-inquiry is-open" role="tabpanel"> <!-- is-open -->
+	<header class="product-section-header">
+		<h1 class="title">문의</h1>
+		<strong class="badge" aria-label="96개">96</strong>
+		<a class="text-button" href="/">문의하기</a>
+		<button class="icon-button sm-only" type="button" aria-label="더보기"><i class="ic-chevron" aria-hidden></i></button>
+	</header>
+	<div class="product-section-content">
+		<ol class="inquiry-list">
+			<li class="inquiry-item">
+				<article class="inquiry-card">
+					<header class="inquiry-card-header">
+						<h3 class="visually-hidden">지* 님이 남기신 문의</h3>
+						<dl class="detail">
+							<dt class="visually-hidden">구매 여부</dt>
+							<dd>구매</dd>
+							<dt class="visually-hidden">문의 유형</dt>
+							<dd>상품</dd>
+							<dt class="visually-hidden">답변 여부</dt>
+							<dd>미답변</dd>
+						</dl>
+						<div class="misc">
+							<strong>지*</strong>
+							<time datetime="2021-01-21 21:41">2021년 1월 2일 21시 41분</time>
+						</div>
+					</header>
+					<div class="inquiry-card-body">
+						<div class="inquiry-content">
+							<span aria-label="문의 내용">Q</span>
+							<p>문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다. 문의글이 들어갑니다.</p>
+						</div>
+					</div>
+				</article>
+			</li>
+			<li class="inquiry-item">
+				<article class="inquiry-card">
+					<header class="inquiry-card-header">
+						<h3 class="visually-hidden">홍시* 님이 남기신 문의</h3>
+						<dl class="detail">
+							<dt class="visually-hidden">구매 여부</dt>
+							<dd>구매</dd>
+							<dt class="visually-hidden">문의 유형</dt>
+							<dd>상품</dd>
+							<dt class="visually-hidden">답변 여부</dt>
+							<dd>미답변</dd>
+						</dl>
+						<div class="misc">
+							<strong>홍시*</strong>
+							<time datetime="2021-01-01 21:41">2021년 1월 1일 21시 41분</time>
+						</div>
+					</header>
+					<div class="inquiry-card-body">
+						<div class="inquiry-content">
+							<span aria-label="문의 내용">Q</span>
+							<p><i class="ic-lock" aria-hidden></i> 비밀글입니다.</p>
+						</div>
+					</div>
+				</article>
+			</li>
+			<li class="inquiry-item">
+				<article class="inquiry-card">
+					<header class="inquiry-card-header">
+						<h3 class="visually-hidden">샤* 님이 남기신 문의</h3>
+						<dl class="detail">
+							<dt class="visually-hidden">구매 여부</dt>
+							<dd>구매</dd>
+							<dt class="visually-hidden">문의 유형</dt>
+							<dd>상품</dd>
+							<dt class="visually-hidden">답변 여부</dt>
+							<dd>답변</dd>
+						</dl>
+						<div class="misc">
+							<strong>샤*</strong>
+							<time datetime="2021-01-01 21:41">2021년 1월 1일 21시 41분</time>
+						</div>
+					</header>
+					<div class="inquiry-card-body">
+						<div class="inquiry-content">
+							<span aria-label="문의 내용">Q</span>
+							<p>답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다. 답변이 달리는 문의글입니다.</p>
+						</div>
+						<div class="inquiry-content">
+							<span aria-label="답변 내용">A</span>
+							<div class="seller">
+								<strong>OA</strong>
+								<time datetime="2021-01-01 21:41">2021년 1월 1일 21시 41분</time>
+							</div>
+							<p>답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다. 답변이 들어갑니다.</p>
+						</div>
+					</div>
+				</article>
+			</li>
+		</ol>
+		<div class="pagination">
+			<!-- <button class="page-control page-prev"><i class="ic-chevron"></i></button> -->
+			<ol class="page-list">
+				<li class="page-item is-active"><a href="/">1</a></li>
+				<li class="page-item"><a href="/">2</a></li>
+				<li class="page-item"><a href="/">3</a></li>
+				<li class="page-item"><a href="/">4</a></li>
+				<li class="page-item"><a href="/">5</a></li>
+			</ol>
+			<button class="page-control page-next"><i class="ic-chevron"></i></button>
+		</div>
+	</div>
+</section>
+
+```
+
+* 문의가 없는 경우 
+
+``` html
+
+<section id="product-inquiry" class="product-section product-inquiry is-open" role="tabpanel">
+	<header class="product-section-header">
+		<h1 class="title">문의</h1>
+		<strong class="badge" aria-label="96개">96</strong>
+		<a class="text-button" href="/">문의하기</a>
+		<button class="icon-button sm-only" type="button" aria-label="더보기"><i class="ic-chevron" aria-hidden></i></button>
+	</header>
+	<div class="product-section-content">
+		<p class="inquiry-empty">
+			문의 내역이 없습니다.
+		</p>
+	</div>
+</section>
+
+```
