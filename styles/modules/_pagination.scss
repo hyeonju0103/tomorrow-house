@@ -18,7 +18,7 @@
 	.page-item {
 		margin-right: 4px;
 		a, button {
-			@extend %page-item-base; min-width: 26px; padding: 0 4px;
+			@extend %page-item-base; min-width: 26px; padding: 0 4px 2px;
 			&:hover { color: $blue; }
 		}
 		&.is-active {

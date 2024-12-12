@@ -2,7 +2,7 @@
 
 	$grid-margin: $sm-margin + $gutter / 2;
 
-	position: sticky; width: 100%; height: 40px; border-bottom: 1px solid $border; background: $white; top: $gnb-height-sm + $lnb-height-sm;
+	position: sticky; width: 100%; height: 40px; border-bottom: 1px solid $border; background: $white; top: $gnb-height-sm + $lnb-height-sm; z-index: $product-tab-level;
 	&-list {
 		@include flexbox; margin: 0 -#{$grid-margin};
 	}

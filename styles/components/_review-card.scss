@@ -1,0 +1,62 @@
+.review-card {
+	padding: 20px 0;
+	&-header {
+		@include flexbox(start);
+		margin-bottom: 20px;
+		.avatar-24 { margin-right: 8px; }
+		.username {
+			@include text-style(13, $primary);
+			strong { font-weight: 400; }
+		}
+		.avatar-24, .username {
+			&:active { opacity: 0.7; }
+		}
+		.detail {
+			@include flexbox(start, center);
+			@include text-style(12, $secondary);
+			.star-rating-13 { margin-right: 4px; }
+			time::after { content: "·"; margin: 0 1px 0 3px; }
+			.misc { line-height: 1; }
+		}
+	}
+	&-body {
+		margin-bottom: 20px;
+		p { @include text-style(13, $primary); }
+		.review-image { width: 64px; height: 64px; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+		.review-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	}
+	&-footer {
+		@include flexbox(start);
+		button {
+			i { margin-right: 4px; margin-left: -4px; }
+			width: 120px; margin-right: 8px;
+		}
+		p {
+			@include text-style(12, $primary);
+			strong { font-weight: 400; }
+			strong span { font-weight: 700; color: $dark; }
+		}
+	}
+
+	@include responsive(T) {
+		padding: 40px 0 40px 32px;
+		&-header {
+			margin-left: -32px;
+			.username {
+				@include text-style(14);
+			}
+		}
+		&-body {
+			p { @include text-style(14); }
+		}
+	}
+
+	@include responsive(D) {
+		.avatar-24, .username {
+			&:hover { opacity: 0.6; }
+		}
+		&-body {
+			.review-image { width: 112px; height: 112px; margin-bottom: 16px; }
+		}
+	}
+}

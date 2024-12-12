@@ -66,30 +66,272 @@
 
 ```
 
-### 3. Search-input
+### 4. product-section-devider
 
 * 최근 검색어가 있을 경우
 
 ``` html
 
-<ol>
-	<li><button type="button">김버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
-	<li><button type="button">버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
-	<li><button type="button">튕김버그</button><button type="button"><i class="ic-close" aria-lebel="검색어 삭제"></i></button></li>
-</ol>
-
-```
-
-* 최근 검색어가 없을 경우
-
-``` html
-
-<section>
-	<header>
-		<h2>최근 검색어</h2>
-		<button type="button">전체 삭제</button>
+<section id="product-review" class="product-section product-review" role="tabpanel"> <!-- is-open -->
+	<header class="product-section-header">
+		<h1 class="title">리뷰</h1>
+		<strong class="badge" aria-label="0개">566</strong>
+		<a class="text-button" href="/">리뷰쓰기</a>
 	</header>
-	<p>최근 검색한 내역이 없습니다.</p>
+	<div class="product-section-content">
+		<div class="review-scoreboard">
+			<div class="score-summary">
+				<strong class="average-score" aria-label="평점 4.8">4.8</strong>
+				<div class="star-rating">
+					<i class="ic-star is-active"></i>
+					<i class="ic-star is-active"></i>
+					<i class="ic-star is-active"></i>
+					<i class="ic-star is-active"></i>
+					<i class="ic-star is-active"></i>
+				</div>
+			</div>
+			<div class="score-detail">
+				<dl class="score-stats-list">
+					<div class="score-stats-item is-active">
+						<dt>5점</dt>
+						<dd>
+							<div class="bar-graph" aria-hidden>
+								<div class="active-bar"></div>
+							</div>
+							<strong class="count" aria-label="467명">467</strong>
+						</dd>
+					</div>
+					<div class="score-stats-item">
+						<dt>4점</dt>
+						<dd>
+							<div class="bar-graph" aria-hidden>
+								<div class="active-bar"></div>
+							</div>
+							<strong class="count" aria-label="87명">87</strong>
+						</dd>
+					</div>
+					<div class="score-stats-item">
+						<dt>3점</dt>
+						<dd>
+							<div class="bar-graph" aria-hidden>
+								<div class="active-bar"></div>
+							</div>
+							<strong class="count" aria-label="13명">13</strong>
+						</dd>
+					</div>
+					<div class="score-stats-item">
+						<dt>2점</dt>
+						<dd>
+							<div class="bar-graph" aria-hidden>
+								<div class="active-bar"></div>
+							</div>
+							<strong class="count" aria-label="0명">0</strong>
+						</dd>
+					</div>
+					<div class="score-stats-item">
+						<dt>1점</dt>
+						<dd>
+							<div class="bar-graph" aria-hidden>
+								<div class="active-bar"></div>
+							</div>
+							<strong class="count" aria-label="0">0</strong>
+						</dd>
+					</div>
+				</dl>
+			</div>
+		</div>
+		<ol class="review-list">
+			<li class="review-item">
+				<article class="review-card">
+					<header class="review-card-header">
+						<h3 class="visually-hidden">김버그 님이 작성한 리뷰</h3>
+						<a class="avatar-24" href="/"><img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨"></a>
+						<div class="info">
+							<a class="username" href="/"><strong>김버그</strong></a>
+							<div class="detail">
+								<div class="star-rating-13" aria-label="5.0점 / 5.0점">
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+								</div>
+								<div class="misc">
+									<time datetime="2021-01-01">2021.01.01</time>
+									<span>오늘의집 구매</span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="review-card-body">
+						<p>리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다.</p>
+					</div>
+					<footer class="review-card-footer">
+						<button class="btn-outlined btn-32" type="button">도움이 돼요</button>
+						<p><strong><span>7</span>명</strong>에게 도움이 되었습니다.</p>
+					</footer>
+				</article>
+			</li>
+			<li class="review-item">
+				<article class="review-card">
+					<header class="review-card-header">
+						<h3 class="visually-hidden">뭐야이거 님이 작성한 리뷰</h3>
+						<a class="avatar-24" href="/"><img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨"></a>
+						<div class="info">
+							<a class="username" href="/"><strong>뭐야이거</strong></a>
+							<div class="detail">
+								<div class="star-rating-13" aria-label="5.0점 / 5.0점">
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+								</div>
+								<div class="misc">
+									<time datetime="2021-01-01">2021.01.01</time>
+									<span>오늘의집 구매</span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="review-card-body">
+						<div class="review-image">
+							<img src="./assets/images/img-review-01.jpg" alt="리뷰 사진">
+						</div>
+						<p>리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다.</p>
+					</div>
+					<footer class="review-card-footer">
+						<button class="btn-outlined btn-32" type="button">도움이 돼요</button>
+						<p><strong><span>7</span>명</strong>에게 도움이 되었습니다.</p>
+					</footer>
+				</article>
+			</li>
+			<li class="review-item">
+				<article class="review-card">
+					<header class="review-card-header">
+						<h3 class="visually-hidden">우유파이 님이 작성한 리뷰</h3>
+						<a class="avatar-24" href="/" aria-label="우유파이 님의 프로필로 이동"></a>
+						<div class="info">
+							<a class="username" href="/"><strong>우유파이</strong></a>
+							<div class="detail">
+								<div class="star-rating-13" aria-label="5.0점 / 5.0점">
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star"></i>
+								</div>
+								<div class="misc">
+									<time datetime="2021-01-01">2021.01.01</time>
+									<span>오늘의집 구매</span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="review-card-body">
+						<p>리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다.</p>
+					</div>
+					<footer class="review-card-footer">
+						<button class="btn-outlined btn-32" type="button">도움이 돼요</button>
+						<p><strong><span>7</span>명</strong>에게 도움이 되었습니다.</p>
+					</footer>
+				</article>
+			</li>
+			<li class="review-item">
+				<article class="review-card">
+					<header class="review-card-header">
+						<h3 class="visually-hidden">쿠쿠 님이 작성한 리뷰</h3>
+						<a class="avatar-24" href="/"><img src="./assets/images/img-user-01.jpg" alt="쿠쿠"></a>
+						<div class="info">
+							<a class="username" href="/"><strong>쿠쿠</strong></a>
+							<div class="detail">
+								<div class="star-rating-13" aria-label="5.0점 / 5.0점">
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star"></i>
+									<i class="ic-star"></i>
+								</div>
+								<div class="misc">
+									<time datetime="2021-01-01">2021.01.01</time>
+									<span>오늘의집 구매</span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="review-card-body">
+						<p>리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다. 리뷰가 들어갑니다.</p>
+					</div>
+					<footer class="review-card-footer">
+						<button class="btn-primary btn-32" type="button"><i class="ic-check" aria-hidden></i> 도움됨</button>
+						<p><strong><span>7</span>명</strong>에게 도움이 되었습니다.</p>
+					</footer>
+				</article>
+			</li>
+			<li class="review-item">
+				<article class="review-card">
+					<header class="review-card-header">
+						<h3 class="visually-hidden">말랑 님이 작성한 리뷰</h3>
+						<a class="avatar-24" href="/"><img src="./assets/images/img-user-01.jpg" alt="말랑"></a>
+						<div class="info">
+							<a class="username" href="/"><strong>말랑</strong></a>
+							<div class="detail">
+								<div class="star-rating-13" aria-label="5.0점 / 5.0점">
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+									<i class="ic-star is-active"></i>
+								</div>
+								<div class="misc">
+									<time datetime="2021-01-01">2021.01.01</time>
+									<span>오늘의집 구매</span>
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="review-card-body">
+						<p>리뷰가 들어갑니다. 리뷰가 들어갑니다.</p>
+					</div>
+					<footer class="review-card-footer">
+						<button class="btn-outlined btn-32" type="button">도움이 돼요</button>
+					</footer>
+				</article>
+			</li>
+		</ol>
+		<div class="pagination">
+			<!-- <button class="page-control page-prev"><i class="ic-chevron"></i></button> -->
+			<ol class="page-list">
+				<li class="page-item is-active"><a href="/">1</a></li>
+				<li class="page-item"><a href="/">2</a></li>
+				<li class="page-item"><a href="/">3</a></li>
+				<li class="page-item"><a href="/">4</a></li>
+				<li class="page-item"><a href="/">5</a></li>
+			</ol>
+			<button class="page-control page-next"><i class="ic-chevron"></i></button>
+		</div>
+	</div>
 </section>
 
 ```
+
+* 리뷰가 없는 경우
+
+``` html
+
+<section id="product-review" class="product-section product-review" role="tabpanel">
+	<header class="product-section-header">
+		<h1 class="title">리뷰</h1>
+		<strong class="badge" aria-label="0개">0</strong>
+		<a class="text-button" href="/">리뷰쓰기</a>
+	</header>
+	<div class="product-section-content">
+		<p class="review-empty">
+			첫 리뷰를 남겨주세요!<br>
+			최대 <strong>500P</strong>를 드립니다.
+		</p>
+	</div>
+</section>
+
+```
+

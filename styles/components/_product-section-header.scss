@@ -13,11 +13,11 @@
 	}
 	.text-button {
 		@include text-style(14, $blue);
-		position: absolute; font-weight: 700; padding: 15px; right: -15px;
+		position: absolute; font-weight: 700; padding: $grid-margin; right: -#{$grid-margin};
 	}
 	.icon-button {
 		@include flexbox;
-		width: 52px; height: 52px; font-size: 22px; color: $secondary; right: -15px;
+		width: 52px; height: 52px; font-size: 22px; color: $secondary; right: -#{$grid-margin};
 		&.is-right { transform: translateY(-50%) rotate(-90deg); }
 	}
 
