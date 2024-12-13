@@ -467,3 +467,28 @@
 </section>
 
 ```
+
+### 5. cta
+
+* 기본 디자인
+
+``` html
+
+<button class="btn-ghost btn-48" type="button">
+	<i class="ic-bookmark"></i>
+	<span aria-label="북마크 18,302회">18,302</span>
+</button>
+
+```
+
+* 상태 디자인
+
+``` html
+
+<button class="btn-ghost is-active btn-48" type="button">
+	<i class="ic-bookmark-filled"></i>
+	<span aria-label="북마크 18,302회">18,302</span>
+</button>
+
+```
+

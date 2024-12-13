@@ -2626,6 +2626,8 @@ i {
       letter-spacing: -0.005em;
       color: #8c8d96;
       font-weight: 400; }
+    .order-cta .btn-ghost.is-active i {
+      color: #3da5f5; }
   .order-cta .btn-primary {
     flex-grow: 1; }
 
