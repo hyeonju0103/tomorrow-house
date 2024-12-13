@@ -12,3 +12,23 @@ const slider = tns({
 	mouseDrag: true,
 	preventScrollOnTouch: true
 });
+
+const userGallery = tns({
+	container: '.user-gallery-slider .slider-list',
+	items: 1,
+	gutter: 4,
+	edgePadding: 16,
+	loop: false,
+	arrowKeys: true,
+	autoplay: false,
+	controls: false,
+	mouseDrag: true,
+	preventScrollOnTouch: true,
+	responsive: {
+		768: {
+			gutter: 6,
+			edgePadding: 70,
+			controls: true,
+		}
+	}
+})
