@@ -23,7 +23,7 @@
 	}
 
 	@include responsive(T){
-		background-color: $background; height: 54px; border-bottom: 0; top: $gnb-height-md + $lnb-height-md;
+		background-color: $background; height: 54px; border-bottom: 0; top: $gnb-height-md + $lnb-height-md; margin: 40px 0;
 		&-list { margin: 0; }
 		&-item {
 			button {

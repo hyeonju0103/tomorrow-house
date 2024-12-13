@@ -1,34 +1,37 @@
-const slider = tns({
-	container: '.product-carousel .slider-list',
-	items: 1,
-	controls: false,
-	nav: true,
-	navContainer: '.product-carousel .thumbnail-list',
-	navAsContainer: true,
+const commonOptions = {
+	navAsThumbnails: true,
 	arrowKeys: true,
+	mouseDrag: true,
+	preventScrollOnTouch: true,
+  }
+  
+  const productCarousel = tns({
+	...commonOptions,
+	container: '.product-carousel .slider-list',
+	controls: false,
+	navContainer: '.product-carousel .thumbnail-list',
 	autoplay: false,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
-	mouseDrag: true,
-	preventScrollOnTouch: true
-});
-
-const userGallery = tns({
-	container: '.user-gallery-slider .slider-list',
-	items: 1,
+  })
+  
+  const userGalleryMobile = tns({
+	...commonOptions,
+	container: '.user-gallery.is-mobile .slider-list',
 	gutter: 4,
 	edgePadding: 16,
-	loop: false,
-	arrowKeys: true,
-	autoplay: false,
 	controls: false,
-	mouseDrag: true,
-	preventScrollOnTouch: true,
-	responsive: {
-		768: {
-			gutter: 6,
-			edgePadding: 70,
-			controls: true,
-		}
-	}
-})
+	navContainer: '.user-gallery.is-mobile .thumbnail-list',
+	loop: false,
+  })
+  
+  const userGalleryDesktop = tns({
+	...commonOptions,
+	container: '.user-gallery.is-desktop .slider-list',
+	gutter: 6,
+	edgePadding: 52,
+	controls: true,
+	controlsContainer: '.user-gallery.is-desktop .user-gallery-controls',
+	navContainer: '.user-gallery.is-desktop .thumbnail-list',
+	loop: false,
+  })
