@@ -2,7 +2,7 @@
 	// 모바일에서만 동작해야 하는 헤더 기능
 	@include mobile-only {
 		&.is-open {
-			.product-section, .product-section-devider:last-child {
+			.product-section, .product-section-divider:last-child {
 				display: block;
 			}
 
@@ -10,7 +10,7 @@
 				display: none;
 			}
 		}
-		.product-section, .product-section-devider:last-child {
+		.product-section, .product-section-divider:last-child {
 			display: none;
 		}
 	}

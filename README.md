@@ -66,7 +66,7 @@
 
 ```
 
-### 4. product-section-devider
+### 4. product-section-divider
 
 * 최근 검색어가 있을 경우
 
@@ -492,3 +492,30 @@
 
 ```
 
+### 6. bookmark-toast
+
+* 북마크에 추가했을 때
+
+``` html
+
+<aside class="bookmark-toast">
+		<h1 class="bookmark-title">스크랩했습니다</h1>
+		<button class="close-button" type="button" aria-label="닫기"><i class="ic-close"></i></button>
+		<div class="button-group">
+			<a class="btn-32 btn-outlined" href="/">스크랩북 보기</a>
+			<button class="btn-32 btn-primary" type="button">폴더에 담기</button>
+		</div>
+	</aside>
+
+```
+
+* 북마크에서 삭제했을 때
+
+``` html
+
+<button class="btn-ghost is-active btn-48" type="button">
+	<i class="ic-bookmark-filled"></i>
+	<span aria-label="북마크 18,302회">18,302</span>
+</button>
+
+```

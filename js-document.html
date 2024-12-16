@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		* { background: #111; }
+		body { width: 100%; height: 100vh; }
+		.button-group { display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; color: #fff; gap: 20px; }
+		button { color: #fff; padding: 10px 30px; font-size: 24px; border-radius: 5em; }
+		button._01 { background-color: #8f3939; }
+		button._02 { background-color: #877e52; }
+		button._03 { background-color: #528759; }
+		button._04 { background-color: #526287; }
+		button._05 { background-color: #875279; }
+	</style>
+</head>
+<body>
+	<div class="button-group">
+		<button class="_01 my-button" type="button">버튼 1</button>
+	</div>
+
+	<script>
+		const button = document.querySelector('.my-button');
+
+		button.addEventListener('click', function(e) {
+			console.log(this); // 왜 윈도우가 나오지...
+		});
+	</script>
+</body>
+</html>

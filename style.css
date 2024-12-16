@@ -1400,11 +1400,11 @@ i {
 
 .product-section {
   padding-bottom: 20px; }
-  .product-section-devider {
+  .product-section-divider {
     height: 8px;
     background-color: #e0e2e7;
     margin: 0 -15px; }
-    .product-section-devider.is-big {
+    .product-section-divider.is-big {
       height: 24px; }
   @media screen and (min-width: 768px) {
     .product-section {
@@ -1794,11 +1794,11 @@ i {
     padding: 28px 0; } }
 
 @media screen and (max-width: 766px) {
-  .product-shipment.is-open .product-section, .product-shipment.is-open .product-section-devider:last-child {
+  .product-shipment.is-open .product-section, .product-shipment.is-open .product-section-divider:last-child {
     display: block; }
   .product-shipment.is-open .product-section-header.sm-only {
     display: none; }
-  .product-shipment .product-section, .product-shipment .product-section-devider:last-child {
+  .product-shipment .product-section, .product-shipment .product-section-divider:last-child {
     display: none; } }
 
 .product-card-image {
@@ -2709,5 +2709,124 @@ i {
     .floating-order-form .button-group .bookmark-button i {
       font-size: 32px;
       color: #3f4150; }
+
+.cart_modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 24px;
+  overflow: hidden;
+  width: calc(100% - 30px);
+  max-width: 360px;
+  text-align: center;
+  display: none; }
+  .cart_modal .cart-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #191a20;
+    margin-bottom: 24px; }
+  .cart_modal .button-group {
+    width: 100%; }
+    .cart_modal .button-group a {
+      width: 100%;
+      margin-bottom: 8px; }
+    .cart_modal .button-group button {
+      width: 100%; }
+  .cart_modal.is-active {
+    display: block; }
+  @media screen and (min-width: 1200px) {
+    .cart_modal {
+      padding-left: 32px;
+      padding-right: 32px; }
+      .cart_modal .cart-title {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        margin-bottom: 16px; }
+      .cart_modal .button-group a {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        height: 55px; }
+      .cart_modal .button-group button {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        height: 55px; } }
+
+.bookmark-toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 600;
+  padding-left: 36px;
+  padding-right: 15px;
+  background-color: #fff;
+  box-shadow: 0 -4px 20px rgba(63, 65, 80, 0.3);
+  width: 100%;
+  height: 56px;
+  white-space: nowrap;
+  display: none; }
+  .bookmark-toast.is-acitve {
+    display: flex; }
+  .bookmark-toast .bookmark-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    font-weight: normal;
+    margin-left: 6px; }
+  .bookmark-toast .close-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 20px;
+    color: #b2b3b9;
+    width: 36px;
+    height: 36px; }
+    .bookmark-toast .close-button:active {
+      color: #8c8d96; }
+  .bookmark-toast .button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .bookmark-toast .button-group a {
+      margin-right: 4px; }
+  @media screen and (min-width: 1200px) {
+    .bookmark-toast {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 40px;
+      height: 80px;
+      max-width: 480px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(63, 65, 80, 0.3);
+      border-radius: 8px;
+      padding-left: 56px;
+      padding-right: 20px; }
+      .bookmark-toast .bookmark-title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .bookmark-toast .button-group a {
+        margin-right: 8px; }
+      .bookmark-toast .close-button {
+        font-size: 24px;
+        left: 10px; }
+        .bookmark-toast .close-button:hover {
+          color: #8c8d96; } }
 
 /*# sourceMappingURL=style.css.map */

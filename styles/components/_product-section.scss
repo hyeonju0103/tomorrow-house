@@ -1,6 +1,6 @@
 .product-section {
 	padding-bottom: 20px;
-	&-devider {
+	&-divider {
 		height: 8px; background-color: $border; margin: 0 -#{$grid-margin};
 		&.is-big { height: 24px; }
 	}
