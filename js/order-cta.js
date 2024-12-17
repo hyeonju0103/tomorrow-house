@@ -14,9 +14,6 @@ function closeOrderModal(){
 }
 
 function toggleOrderCtaBookmark(){
-	// 1. 북마크 버튼에 is-active를 줘서 파랗게
-	// 2. 아이콘 클래스를 ic-bookmark-filled로 변경
-	// 3. 북마크 아이콘 하단의 숫자에 1을 추가 (카운트값 변경)
 	const [icon, countSpasn] = this.children;
 	const count = Number(countSpasn.innerHTML.replaceAll(',', ''));
 	let newCount = count;

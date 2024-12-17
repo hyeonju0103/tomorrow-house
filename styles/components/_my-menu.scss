@@ -26,4 +26,8 @@
 			&:hover { background-color: $background; }
 		}
 	}
+
+	@include responsive(D) {
+		&:hover .my-menu-button { border-color: $blue; }
+	}
 }

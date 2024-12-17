@@ -843,6 +843,9 @@ i {
     border-radius: 4px; }
     .my-menu-item a:hover, .my-menu-item button:hover {
       background-color: #f7f8fa; }
+  @media screen and (min-width: 1200px) {
+    .my-menu:hover .my-menu-button {
+      border-color: #3da5f5; } }
 
 .drawer-menu.is-active .drawer-menu-button {
   color: #3da5f5; }
