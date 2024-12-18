@@ -47,7 +47,7 @@ productTabButtonlist.forEach((button) => {
 });
 
 // 각 tabPanel의 y축 위치를 알아야 함
-// 요소의 y축 위치 = window.scrollY + element.getBoundingClientRect().top
+// 요소의 y축 위치 = window.scrollY + element.getBoundingClientRect().top 
 
 const productTabPanelIdList = [
 	'product-spec',
