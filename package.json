@@ -22,9 +22,6 @@
 		"url": "https://github.com/rohjs/tomorrow-house/issues"
 	},
 	"homepage": "https://github.com/rohjs/tomorrow-house#readme",
-	"dependencies": {
-		"node-sass": "^6.0.0"
-	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.2",
 		"cssnano": "^5.0.17",
