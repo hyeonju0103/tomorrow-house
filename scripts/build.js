@@ -11,24 +11,16 @@ const REPOSITORY_NAME = 'tomorrow-house'
 const buildDir = path.resolve(__dirname, '../build')
 
 const faviconFileList = [
-	'android-chrome-192x192.png',
-	'android-chrome-512x512.png',
+	'web-app-manifest-192x192.png',
+	'web-app-manifest-512x512.png',
 	'apple-touch-icon.png',
-	'browserconfig.xml',
-	'favicon-16x16.png',
-	'favicon-32x32.png',
 	'favicon.ico',
-	'mstile-150x150.png',
-	'safari-pinned-tab.svg',
 	'site.webmanifest',
 ]
 
 const faviconUrlList = [
 	'/apple-touch-icon.png',
-	'/favicon-32x32.png',
-	'/favicon-16x16.png',
 	'/site.webmanifest',
-	'/safari-pinned-tab.svg',
 ]
 
 function throwError(err) {
