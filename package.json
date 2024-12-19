@@ -9,7 +9,7 @@
 		"sass": "node-sass -wr --source-map true styles/main.scss style.css",
 		"sass:build": "node-sass -r --source-map true styles/main.scss style.css",
 		"build": "node ./scripts/build.js",
-		"deploy": "node ./scripts/deploy.js"
+		"deploy": "npm run sass:build && npm run build && node ./scripts/deploy.js"
 	},
 	"repository": {
 		"type": "git",
@@ -30,5 +30,9 @@
 		"imagemin": "^8.0.1",
 		"imagemin-jpegtran": "^7.0.0",
 		"postcss": "^8.4.49"
+	},
+	"dependencies": {
+		"imagemin-pngquant": "^10.0.0",
+		"imagemin-svgo": "^11.0.1"
 	}
 }
