@@ -25,7 +25,7 @@ const faviconUrlList = [
 
 function throwError(err) {
 	if (err) {
-		console.log('💥 Oops! Something went wrong')
+		console.log('문제생김')
 	}
 }
 
@@ -93,7 +93,7 @@ try {
 
 async function build() {
 	console.log('------------------------')
-	console.log('Start building...')
+	console.log('빌드시작')
 
 	// Create `build` directory
 	if (!fs.existsSync(buildDir)) fs.mkdirSync(buildDir)
@@ -116,8 +116,8 @@ async function build() {
 
 	await optimizeImageAssets()
 
-	console.log('🎉 Successfully build your project');
-	console.log('🔜 Ready to deploy');
+	console.log('빌드완료');
+	console.log('디플로이 하세요');
 }
 
 build();
